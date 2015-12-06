@@ -43,7 +43,7 @@ test( 'Post model can be instantiated with correct default values', function() {
 	equal( post.get('link'), '', 'Link should be empty' );
 	equal( post.get('parent'), 0, 'Parent should be 0' );
 	equal( Object.prototype.toString.call( post.get('date') ), '[object Date]', 'date should be object type Date' );
-	equal( post.get('date_gmt'), undefined, 'date_gmt should be undefined' );
+	equal( Object.prototype.toString.call( post.get('date_gmt') ), '[object Date]', 'date_gmt should be object type Date' );
 	equal( post.get('format'), 'standard', 'Format should be standard' );
 	equal( post.get('slug'), '', 'Slug should be empty' );
 	equal( post.get('guid'), '', 'guid should be empty' );
